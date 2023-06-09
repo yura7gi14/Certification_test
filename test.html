@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>認証</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                text-align: center;
+            }
+        </style>
+        <script type="text/javascript">
+            function check(){
+                var password = document.getElementById("password").value;
+                if(password == "password"){
+                    alert("認証成功");
+                }else{
+                    alert("認証失敗");
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>認証</h1>
+        <form action="auth.php" method="post">
+            <p>パスワード：<input type="password" name="password"></p>
+            <p><input type="submit" value="ログイン"></p>
+        </form>
+    </body>
+</html>
